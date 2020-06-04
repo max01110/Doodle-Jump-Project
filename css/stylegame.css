@@ -1,0 +1,150 @@
+@font-face {
+	src: url(fonts/al-seana.ttf);
+	font-family: seana;
+  }
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    
+    background:url("../images/background.png");
+    
+  }
+  body {
+    margin: 0;
+    display: flex;
+  
+    /* This centers our sketch horizontally. */
+    justify-content: center;
+  
+    /* This centers our sketch vertically. */
+    align-items: top;
+  }
+
+  form {
+    display: inline-block;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+h1 {
+ font-family: seana;
+ font-size: 60px;
+ color: red;
+ text-align: center;
+ }
+h2 {
+  font-family: seana;
+  font-size: 120px;
+  color: red;
+  text-align: center;
+  margin-top: 0;
+  transform: rotate(-10deg);
+  }
+
+h3 {
+  font-family: seana;
+  font-size: 40px;
+  color: black;
+  text-align: center;
+  }
+p1 {
+ font-family: seana;
+ font-size: 40px;
+ color: green;
+ text-align: center;
+ }
+
+p2 {
+  font-family: seana;
+  font-size: 40px;
+  color: black;
+  }
+ 
+ 
+
+.middle {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.btn {
+  background: none;
+  border: 2px solid #000;
+  font-family: seana;
+  font-size: 25px;
+  padding: 12px 20px;
+  min-width: 350px;
+  margin: 10px;
+  cursor: pointer;
+  transition: color 0.4s linear;
+  position: relative;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(22, 160, 1);
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.btn1::before {
+  transform: scaleX(0);
+}
+.btn2::before {
+  transform: scaleY(0);
+}
+
+.btn1:hover::before {
+  transform: scaleX(1);
+}
+.btn2:hover::before {
+  transform: scaleY(1);
+}
+
+
+.banner {
+  margin: 0px auto;
+  padding: 0px;
+  height: 5%;
+  width: 100%;
+  overflow: hidden;
+  border: solid;
+  background-color: RGB(207, 185, 151);
+  border-color: #000;
+  border-width: 0px 0px 2px 0px;
+}
+audio { 
+  display:none;
+}

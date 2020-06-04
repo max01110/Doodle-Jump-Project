@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="icon" href="images/favicon.ico" sizes="16x16" type="image/x-icon">  
+
+  <title>Loading - Doode Jump</title>
+
+
+</head>
+
+<body style="background-color:RGB(43,44,47);">
+
+
+  <figure>
+  <img src="images/loader.gif" alt="my img" class="center"/>
+  <figcaption class="text" id="t1">Loading Game...</figcaption>
+</figure>
+
+
+
+  <script>
+    var timeout;
+    var elem = document.getElementById("t1");
+
+    clearTimeout(timeout);
+    timeout = setTimeout(function() {
+      elem.innerHTML = "Click Anywhere to Start";
+      window.onclick = myFunction;
+
+      function myFunction() {
+        window.location.href = "menu.html";
+      }
+    }, 2000);
+
+
+  </script>
+
+
+
+</body>
+</html>
