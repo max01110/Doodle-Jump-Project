@@ -11,9 +11,7 @@ class Doodle {
     doodleImg.resize(this.w, this.w)
     imageMode(CENTER);  
     image(doodleImg, this.x, this.y)
-    // stroke(150);
-    // noStroke();
-    // ellipse(this.x, this.y, this.w);
+
  
   }
   //Method to make doodle jump
